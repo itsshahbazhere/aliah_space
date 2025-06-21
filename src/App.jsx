@@ -6,6 +6,7 @@ import ExamSpace from './components/ExamSpace'
 import NotFound from './components/NotFound'
 import Navbar from './components/Navbar';
 import AdminLogin from './components/AdminLogin';
+import AdminDashboard from './components/AdminDashboard';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/examspace" element={<ExamSpace />} />
           <Route path="/learnspace" element={<LearnSpace />} />
           <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
           
           {/* 404 Not Found Route */}
           <Route path="*" element={<NotFound />} /> 
