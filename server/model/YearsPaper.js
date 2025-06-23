@@ -6,10 +6,6 @@ const yearsPaperSchema = new mongoose.Schema(
       type: String,
       require: true,
     },
-    description: {
-      tyep: String,
-      default: "",
-    },
     subjects: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "Subject",

@@ -5,13 +5,9 @@ const departmentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  description: {
-    type: String,
-    default: "",
-  },
-  Branch: [{
+  programmes: [{
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Branch",
+    ref: "Programmes",
   }],
 });
 
